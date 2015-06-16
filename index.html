@@ -1,151 +1,166 @@
 <!DOCTYPE html>
-<!-- TO BE EDITED -->
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="webicons.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">      
-    <link rel="stylesheet" href="main.css">    
+    <link rel="stylesheet" href="main.css">
+    <script type='text/javascript'
+          src='http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js'>
+    </script>
+	<script src="mainjava.js"></script>
+    <!--<script type="text/javascript">
+         var imgs = [
+        'images/maincontent1.jpg',
+        'images/maincontent2.jpg',
+        'images/maincontent3.jpg'];
+        var cnt = imgs.length;
+
+        $(function() {
+            setInterval(Slider, 3000);
+        });
+
+        function Slider() {
+        $('#imageSlide').fadeOut("slow", function() {
+           $(this).attr('src', imgs[(imgs.length++) % cnt]).fadeIn("slow");
+        });
+		
+	}
+   </script>-->    
   </head>
   <body>
     <div class="mainhead">
 	  <div class="container">
-	    <p><b>WELCOME TO THE PRETTY LOOK STORE</b></p>
+	    <p><b>WELCOME TO THE ONLINE APPAREL STORE</b></p>
 	  </div>
     </div>
 	<div class="logo">
 	  <div class="container">
 	    <div class="pull-left">
-		  <image src="images/small_logo.jpg">
+		  <image src="images/LogoHere.jpg">
 		</div>
 		<div class="pull-right">
 		  <ul class="list-inline">
-		    <li><b>ACCOUNT</b></li>
-			<li><b>CART<b></li>
+		    <li><a href=""><b><img src="images/myaccount.png"> MYACCOUNT</b></a></li>
+			<li><a href=""><b><img src="images/cart.png"> MYCART<b></a></li>
 		  </ul>
+		  <div id="specialoffer">
+		    <p> Hurry Up. 20% discount this festive season on our season collections</p>
+		  </div>
 		</div>
 	   </div>
 	  </div>
 	  <div class="searchinput">
 		<div class="container">
 		   <div id="search" class="pull-right">
-		     <input type="text" placeholder ="Search entire store" required>	
+		     <input id="searchinp" type="text" placeholder ="Search entire store" required>	
 			</div>
 		 </div>
 	  </div>
 	  <div class="nav">
          <div class="container">
-           <ul>
-             <li class="mainmenuli"><a href="#">KURTI</a>
-              <ul>
-			     <li><a href="#">View All Kurtis</a></li>
-				 <li><a href="#">New Arrivals</a></li>
-				 <li><a href="#">Party Wear Kurtis</a></li>
-				 <li><a href="#">Casual Kurtis</a></li>
+           <ul class="bigmenu">
+             <li class="mainmenuli"><a href="#">PRODUCT 1</a>
+              <ul class="sub-menu">
+			     <li><a href="#">Category One</a></li>
+				 <li><a href="#">Category Two</a></li>
+				 <li><a href="#">Category Three</a></li>
+				 <li><a href="#">Category Four</a></li>
 			   </ul>           		   
 			 </li>
-             <li class="mainmenuli"><a href="#">SAREES</a>
-			 <!--
-			   <ul class="sub-menu">
-			     <li><a href="#">View All Sarees</a></li>
-				 <li><a href="#">New Arrivals</a></li>
-				 <li><a href="#">Party Wear Sarees</a></li>
-				 <li><a href="#">Casual Sarees</a></li>
+             <li class="mainmenuli"><a href="#">PRODUCT 2</a>
+			  <ul class="sub-menu">
+			     <li><a href="#">Category One</a></li>
+				 <li><a href="#">Category Two</a></li>
+				 <li><a href="#">Category Three</a></li>
+				 <li><a href="#">Category Four</a></li>
 			   </ul>
-			   -->
+			 </li>			 			  
+			 <li class="mainmenuli"><a href="#">PRODUCT 3</a>
+                <ul class="sub-menu">
+			     <li><a href="#">Category One</a></li>
+				 <li><a href="#">Category Two</a></li>
+				 <li><a href="#">Category Three</a></li>
+				 <li><a href="#">Category Four</a></li>
+			   </ul>			 
 			 </li>
-			 <li class="mainmenuli"><a href="#">LEHENGA</a>
-			 <!--
-			   <ul class="sub-menu">
-			     <li><a href="#">View All Lehenga</a></li>
-				 <li><a href="#">New Arrivals</a></li>				 
-			   </ul>
-			   -->
+			 <li class="mainmenuli"><a href="#">JUST ARRIVED</a>
+              <ul class="sub-menu">
+			     <li><a href="#">Category One</a></li>
+				 <li><a href="#">Category Two</a></li>
+				 <li><a href="#">Category Three</a></li>
+				 <li><a href="#">Category Four</a></li>
+			   </ul>			 
 			 </li>
-			 <li class="mainmenuli"><a href="#">SUITS</a>
-			 <!--
-			   <ul class="sub-menu">
-			     <li><a href="#">View All Suits</a></li>
-				 <li><a href="#">New Arrivals</a></li>
-                 <li><a href="#">Party Wear Suits</a></li>
-				 <li><a href="#">Casual Suits</a></li>				 
-			   </ul>
-			   -->
+			 <li class="mainmenuli"><a href="#">LATEST TREND</a>
+               <ul class="sub-menu">
+			     <li><a href="#">Category One</a></li>
+				 <li><a href="#">Category Two</a></li>
+				 <li><a href="#">Category Three</a></li>
+				 <li><a href="#">Category Four</a></li>
+			   </ul>			 
 			 </li>
-			 <li class="mainmenuli"><a href="#">SALE</a>
-			 <!--
-			   <ul class="sub-menu">
-			     <li><a href="#">View All Sales</a></li>
-				 <li><a href="#">Kurtis</a></li>
-                 <li><a href="#">Sarees</a></li>
-				 <li><a href="#">Lehenga</a></li>
-                 <li><a href="#">Suits</a></li>				 
-			   <ul>
-			   -->
-			 </li>
-			 <li class="mainmenuli"><a href="#">CUSTOM</a></li>
+			 <li class="mainmenuli"><a href="#">CUSTOM</a></li>			 
            </ul>       
         </div>
 	  </div>
 	  <div class="maincontent">
-        <div class="container">
+        <div class="container">		   
 		   <div class="thumbnail">
-		    <img src="images/maincontent1.jpg">
-		   </div>
-           <h2>Rich Detailing and Custom Designs</h2>           
+			  <img id="imageSlide" src="images/fabric_pattern.jpg">
+			</div>			                    
+	       <h2>Add your cover page here</h2>           		   
         </div>
       </div>
 	  <div class="inneroptions">
 	    <div class="container">
-		   <div class="row">
-	         <div class="col-md-4">
-               <div class="thumbnail">			 
-	            <img src="images/kurticsandtunic.png">					          
-			   </div>
+		   <h2>Categories</h2>
+		     <div id="category1" class="inncat">
+	              <h3 id="categoryitem">PRODUCT 1</h3>
+		     </div>
+			 <div id="category2" class="inncat">
+			    <h3 id="categoryitem">PRODUCT 2</h3>
 			 </div>
-			 <div class="col-md-4">
-			  <div class="thumbnail">
-	           <img src="images/sarees.png">
-			  </div>
+			 <div id="category3" class="inncat">
+			       <h3 id="categoryitem">PRODUCT 3</h3>
 			 </div>
-			 <div class="col-md-4">
-			  <div class="thumbnail">
-			    <img src="images/lehenga.png">
-			  </div>
-			 </div>
-			</div>          
-		</div>
-	  <div>
+          </div>
+	   </div>
 	  <div class="newproducts">
 	    <div class="container">
 	        <h2>New Products</h2>	        
 	        <div class="row">
 	         <div class="col-md-3">
 	          <div class="thumbnail">
-	            <img src="images/image1.jpg">				
+	            <img id="ouritem" src="images/image1.jpg">				
 	          </div>
-              <h3><a href="#">CASUAL SHORT FLORAL KURTI</a></h3>
-              <p>&#x20B9 450</p>			  
+              <h3><a href="#">ITEM ONE</a></h3>
+              <p>&#x20B9 450</p>
+              <img id="cart" src="images/addtocart.jpg">			  
 	         </div>
 	         <div class="col-md-3">
 	           <div class="thumbnail">
-	            <img src="images/image2.jpg">				
+	            <img id="ouritem" src="images/image2.jpg">				
 	          </div>
-			  <h3><a href="#">ELIZABETH KNIT TOP</a></h3>
+			  <h3><a href="#">ITEM TWO</a></h3>
 			  <p>&#x20B9 210</p>
+			  <img id="cart" src="images/addtocart.jpg">
 	         </div>
 	         <div class="col-md-3">
 	           <div class="thumbnail">
-	            <img src="images/image3.jpg">				
+	            <img id="ouritem" src="images/image3.jpg">				
 	          </div>
-			  <h3><a href="#">CHELSEA TEE</a></h3>
+			  <h3><a href="#">ITEM THREE</a></h3>
 			  <p>&#x20B9 75</p>
+			  <img id="cart" src="images/addtocart.jpg">
 			 </div>
              <div class="col-md-3">
 	           <div class="thumbnail">
-	            <img src="images/image4.jpg">				
+	            <img id="ouritem" src="images/image4.jpg">				
 	          </div>
-              <h3><a href="#">LAFAYETTE CONVERTIBLE DRESS</a></h3>
-              <p>&#x20B9 340</p>			  
+              <h3><a href="#">ITEM FOUR</a></h3>
+              <p>&#x20B9 340</p>
+              <img id="cart" src="images/addtocart.jpg">			  
 	         </div>
          	</div>
 	        </div>
@@ -156,9 +171,9 @@
 	         <div class="col-md-3">
                <p>COMPANY</p>			 
 			   <ul class="pull-left">			     
-				 <li><a href="#">ABOUT US</a></li>
-				 <li><a href="#">CONTACT US</a></li>
-				 <li><a href="#">CUSTOMER SERVICE</a></li>
+				 <li><a href="AboutUs.html">ABOUT US</a></li>
+				 <li><a href="ContactUs.html">CONTACT US</a></li>
+				 <li><a href="CustomerService.html">CUSTOMER SERVICE</a></li>
 			     <li><a href="#">PRIVACY POLICY</a></li>
 			     <li><a href="#">BLOG</a></li>			     
                 </ul> 
@@ -181,18 +196,19 @@
 			<div class="col-md-3">
 			  <p>CONNECT WITH US</p>
 			   <ul>
-				 <li><a href="#">FACEBOOK</a></li>
-				 <li><a href="#">TWITTER</a></li>
-                 <li><a href="#">INSTAGRAM</a></li>
-                 <li><a href="#">PINTEREST</a></li>				 
+				 <li><a href=""><img src="images/webicon-facebook-s.png"> FACEBOOK</a></li>
+				 <li><a href=""><img src="images/webicon-twitter-s.png"> TWITTER</a></li>
+                 <li><a href=""><img src="images/webicon-instagram-s.png"> INSTAGRAM</a></li>
+                 <li><a href=""><img src="images/webicon-pinterest-s.png"> PINTEREST</a></li>				 
                 </ul> 
 			</div>
 		  </div>
 		</div>
 		<div class="footer">
 		  <div class="container">
-		    <address class="copyright">&copy; 2015 Pretty Look Designs. All Rights Reserved.</address>
+		    <address class="copyright">&copy; 2015 Designed by Megha Maheshwari. All Rights Reserved.</address>
 		  </div>
 		</div>
   </body>
 </html>  
+ 
